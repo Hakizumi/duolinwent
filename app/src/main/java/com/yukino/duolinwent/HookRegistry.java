@@ -1,5 +1,6 @@
 package com.yukino.duolinwent;
 
+import com.yukino.duolinwent.hooks.UserPlusHook;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Unmodifiable;
 
@@ -13,6 +14,10 @@ import java.util.List;
  */
 public class HookRegistry {
     private static final List<IHook> HOOKS = new ArrayList<>();
+
+    static {
+        HOOKS.add(new UserPlusHook());
+    }
 
     public static void add(IHook hook) {
         HOOKS.add(hook);
