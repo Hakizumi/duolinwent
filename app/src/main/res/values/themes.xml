@@ -1,5 +1,6 @@
 <resources>
-    <style name="Theme.Duolinwent" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Duolinwent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
 </resources>
