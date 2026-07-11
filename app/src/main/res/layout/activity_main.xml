@@ -3,9 +3,99 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/main"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/projectIntroRoot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <!-- Background image -->
+    <ImageView
+            android:id="@+id/bgImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Content layout -->
+    <LinearLayout
+            android:id="@+id/contentCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp"
+            android:elevation="12dp"
+            app:layout_constraintWidth_percent="0.88"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Project name -->
+        <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="22dp"
+                android:text="Duolinwent"
+                android:textColor="#22EB3A"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fulu_steed_2"
+                android:lineSpacingExtra="6dp"/>
+
+        <!-- Project introduce -->
+        <TextView
+                android:id="@+id/tvProjectDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Duolingo plus and super requirement were gone and will never back!"
+                android:textColor="#BBC0CC"
+                android:textSize="22sp"
+                android:fontFamily="@font/rastano_3"
+                android:lineSpacingExtra="6dp" />
+
+        <!-- Divider line -->
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="#33FFFFFF" />
+
+        <!-- Usage -->
+        <TextView
+                android:id="@+id/tvProjectDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Usage: \nDownload latest Duolinwent and enable Duolinwent in LSPosed framework."
+                android:textColor="#3F3F3F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/just_a_kiss_2"
+                android:lineSpacingExtra="6dp" />
+
+        <!-- GitHub button -->
+        <TextView
+                android:id="@+id/btnGithub"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="View on GitHub"
+                android:textColor="#807E7E"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
