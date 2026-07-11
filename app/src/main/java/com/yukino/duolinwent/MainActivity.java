@@ -1,8 +1,11 @@
 package com.yukino.duolinwent;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
+import android.widget.Button;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -22,6 +25,18 @@ public class MainActivity extends Activity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        Button btnStart = findViewById(R.id.btnGithub);
+        btnStart.setOnClickListener((view) -> {
+            // Open GitHub repository
+            String url = "https://github.com/Hakizumi/duolinwent";
+
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+
+            // Start the intent and open browser
+            startActivity(intent);
         });
     }
 }
