@@ -52,7 +52,7 @@
 
         <!-- Project introduce -->
         <TextView
-                android:id="@+id/tvProjectDesc"
+                android:id="@+id/tvProjectIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -72,7 +72,7 @@
 
         <!-- Usage -->
         <TextView
-                android:id="@+id/tvProjectDesc"
+                android:id="@+id/tvProjectUsage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
