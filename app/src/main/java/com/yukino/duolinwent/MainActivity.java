@@ -3,7 +3,7 @@ package com.yukino.duolinwent;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button btnStart = findViewById(R.id.btnGithub);
-        btnStart.setOnClickListener((view) -> {
+        TextView githubBtn = findViewById(R.id.btnGithub);
+        githubBtn.setOnClickListener((view) -> {
             // Open GitHub repository
             String url = "https://github.com/Hakizumi/duolinwent";
 
