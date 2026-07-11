@@ -48,6 +48,9 @@
                 android:textSize="48sp"
                 android:textStyle="bold"
                 android:fontFamily="@font/fulu_steed_2"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="none"
                 android:lineSpacingExtra="6dp"/>
 
         <!-- Project introduce -->
