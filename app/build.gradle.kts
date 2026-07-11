@@ -55,4 +55,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     compileOnly("de.robv.android.xposed:api:82")
+    implementation("org.luckypray:dexkit:2.2.0")
 }
