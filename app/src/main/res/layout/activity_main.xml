@@ -21,6 +21,34 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Project name -->
+    <HorizontalScrollView
+            android:id="@+id/projectNameScroll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintTop_toTopOf="@id/tvProjectNameSpacer"
+            app:layout_constraintBottom_toBottomOf="@id/tvProjectNameSpacer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" tools:ignore="NotSibling">
+
+        <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#22EB3A"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fulu_steed_2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:lineSpacingExtra="6dp" />
+
+    </HorizontalScrollView>
+
     <!-- Content layout -->
     <LinearLayout
             android:id="@+id/contentCard"
@@ -35,23 +63,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Project name -->
+        <!-- Placeholder transparent project name -->
         <TextView
-                android:id="@+id/tvProjectName"
+                android:id="@+id/tvProjectNameSpacer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="22dp"
                 android:text="@string/app_name"
-                android:textColor="#22EB3A"
+                android:textColor="@android:color/transparent"
                 android:textSize="48sp"
                 android:textStyle="bold"
                 android:fontFamily="@font/fulu_steed_2"
                 android:maxLines="1"
-                android:scrollHorizontally="true"
-                android:ellipsize="none"
-                android:lineSpacingExtra="6dp"/>
+                android:lineSpacingExtra="6dp" />
 
         <!-- Project introduce -->
         <TextView
