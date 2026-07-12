@@ -1,6 +1,6 @@
 <div align="center">
 
-![new-api](/assets/logo.png)
+![duolingo](/assets/logo.png)
 
 # Duolinwent
 🍥 **Duolingo plus and super requirement were gone and will never back!**
