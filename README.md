@@ -1,11 +1,11 @@
-<div style="text-align: center;">
+<div align="center">
 
 ![new-api](/assets/logo.png)
 
 # Duolinwent
 🍥 **Duolingo plus and super requirement were gone and will never back!**
 
-<p style="text-align: center;">
+<p align="center">
   <a href="https://raw.githubusercontent.com/Hakizumi/duolinwent/main/LICENSE">
     <img src="https://img.shields.io/github/license/Hakizumi/duolinwent?color=brightgreen" alt="license">
   </a>
