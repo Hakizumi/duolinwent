@@ -6,6 +6,11 @@
 🍥 **多邻国的Super订阅要求将会消失并永远不会回来!**
 
 <p align="center">
+  <a href="./README.md">English</a> |
+  <strong>简体中文</strong>
+</p>
+
+<p align="center">
   <a href="https://raw.githubusercontent.com/Hakizumi/duolinwent/main/LICENSE">
     <img src="https://img.shields.io/github/license/Hakizumi/duolinwent?color=brightgreen" alt="license">
   </a>
