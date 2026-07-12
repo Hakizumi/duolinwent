@@ -2,11 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
     <application
-            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
             android:theme="@style/Theme.Duolinwent"
             android:label="@string/app_name"
             android:supportsRtl="true">
-        <!-- Activities declarement -->
+        <!-- Activities declaration -->
         <activity
                 android:name=".MainActivity"
                 android:exported="true">
