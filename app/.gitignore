@@ -1,2 +1,6 @@
 # Gradle
 /build
+
+# Apk Signature
+release.keystore
+keystore.properties
