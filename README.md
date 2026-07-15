@@ -20,6 +20,11 @@
 </p>
 </div>
 
+## Notice
+> [!IMPORTANT]
+This project has bean archived since 2026/7/15,new repository is migrate to https://github.com/Hakizumi/android_patcher.
+So this repository will no longer be maintained.
+
 ## 📝 Project Description
 > [!IMPORTANT]
 > - This project is for learning purposes ONLY,users should use the software LAWFULLY.
